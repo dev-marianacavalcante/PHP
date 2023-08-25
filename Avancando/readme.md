@@ -2,9 +2,9 @@
 
 - Agrupa vários valores;
 - Também é chamado de vetor ou lista (isso depende da linguagem ou plataforma);
-- Usa-se [] ou array() para declarar um novo array;
-- Acessa um elemento usamos os [];
-- Dentro dos [] vem a posição do elemento;
+- Usa-se [ ] ou array() para declarar um novo array;
+- Acessa um elemento usamos os [ ];
+- Dentro dos [ ] vem a posição do elemento;
 - Possui um índice que por padrão começa com 0 (zero);
 - Para acessar todos os elementos podemos usar uma estrutura de repetição;
 - Para saber quantos elementos um array tem existe a função count();
@@ -21,5 +21,5 @@
 - O laço foreach oferece uma forma mais expressiva de iteração
   - No foreach podemos acessar o índice e o valor do elemento da iteração
 - Arrays podem crescer e podemos adicionar novos elementos
-- Em arrays simples, com índice numérico, basta usar [] para adicionar um elemento no final (por exemplo, $lista[] = 12;)
+- Em arrays simples, com índice numérico, basta usar [ ] para adicionar um elemento no final (por exemplo, $lista[ ] = 12;)
   - nesse caso o PHP automaticamente incrementa o índice
