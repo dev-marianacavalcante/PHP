@@ -30,3 +30,20 @@
 - Uma função usa a palavra chave function, possui um nome, pode ter parâmetros, tem um corpo e pode ter um retorno;
 - Para chamar uma função usamos o nome dela passando o valor dos parâmetros;
 - Uma função pode especificar os tipos na declaração do parâmetro (a partir da versão 7), como também o tipo do retorno.
+
+## Interpolacao e Require
+
+- Como usar um array associativo dentro de uma string:
+
+  - Para acessar um valor de um array associativo dentro de string devemos omitir as aspas da chave, por exemplo "$conta[titular]";
+  - E alternativamente podemos usar chaves em volta do array, por exemplo: "{$conta['titular']}".
+
+- Um código PHP pode ser separado em vários arquivos e orquestrar a execução podem usar include, require e require_once:
+
+  - include não dá erro (apenas avisa) se o arquivo não existe, require dá erro;
+  - require_once garante que o arquivo será incluído apenas uma vez.
+
+- Níveis de mensagens entre eles:
+
+  - E_NOTICE, PHP dá um aviso mas "se vira" e continua com a execução;
+  - E_ERROR, PHP dá erro e para a execução do programa.
