@@ -1,4 +1,5 @@
 <?php
+
 require_once 'funcoes.php';
 
 $contasCorrentes = [
@@ -37,10 +38,30 @@ unset($contasCorrentes['345.678.910-12']);
 
 titularLetrasMaiusculas($contasCorrentes['234.567.891-01']);
 
-foreach ($contasCorrentes as $cpf => $conta) {
-    ['titular'=> $titular, 'saldo' => $saldo] = $conta;
-    exibeMensagem (
-        "$cpf $titular $saldo"
-    );
-}
 ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+</head>
+
+<body>
+    <h1>Contas correntes</h1>
+
+    <ul>
+        <?php foreach($contasCorrentes as $cpf => $conta) { ?>
+        <dt>
+            <h3><?= $conta['titular']; ?> - <?= $cpf; ?> </h3>
+        </dt>
+        <dd>
+            Saldo:<?= $conta['saldo']; ?>
+        </dd>
+
+        <?php } ?>
+    </ul>
+</body>
+
+</html>
