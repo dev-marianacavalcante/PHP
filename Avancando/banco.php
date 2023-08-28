@@ -32,9 +32,15 @@ $contasCorrentes['234.567.891-01'] = depositar(
     900
 );
 
+//remover
+unset($contasCorrentes['345.678.910-12']);
+
+titularLetrasMaiusculas($contasCorrentes['234.567.891-01']);
+
 foreach ($contasCorrentes as $cpf => $conta) {
+    ['titular'=> $titular, 'saldo' => $saldo] = $conta;
     exibeMensagem (
-        "$cpf {$conta['titular']} {$conta['saldo']}"
+        "$cpf $titular $saldo"
     );
 }
 ?>
