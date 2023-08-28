@@ -48,7 +48,7 @@
   - E_NOTICE, PHP dá um aviso mas "se vira" e continua com a execução;
   - E_ERROR, PHP dá erro e para a execução do programa.
 
-## PHP na WEB! Aprendemos que:
+## PHP na WEB:
 
 - Precisamos de um servidor para programar na web
   - PHP já tem um servidor embutido
